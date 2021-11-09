@@ -1,4 +1,8 @@
 #!/bin/bash
+:<<end_of_comments
+https://github.com/VictoriaMetrics/vmctl
+end_of_comments
+
 snap=$(./sync.py)
 thread=$(nproc)
 echo $snap
