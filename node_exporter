@@ -1,0 +1,35 @@
+cat <<EOF> /etc/sysconfig/node_exporter
+OPTIONS="--collector.textfile.directory /var/lib/node_exporter/textfile_collector \
+--web.disable-exporter-metrics \
+--no-collector.vmstat \
+--no-collector.xfs \
+--no-collector.zfs \
+--no-collector.nfs \
+--no-collector.nfsd \
+--no-collector.pressure \
+--no-collector.sockstat \
+--no-collector.stat \
+--no-collector.time \
+--no-collector.timex \
+--no-collector.uname \
+--no-collector.infiniband \
+--no-collector.ipvs \
+--no-collector.loadavg \
+--no-collector.mdadm \
+--no-collector.meminfo \
+--no-collector.netclass \
+--no-collector.netdev \
+--no-collector.netstat \
+--no-collector.cpu \
+--no-collector.cpufreq \
+--no-collector.diskstats \
+--no-collector.edac \
+--no-collector.entropy \
+--no-collector.filefd \
+--no-collector.filesystem \
+--no-collector.hwmon \
+--no-collector.arp \
+--no-collector.bcache \
+--no-collector.bonding \
+--no-collector.conntrack "
+EOF
